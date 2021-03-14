@@ -17,7 +17,7 @@ body{
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 25px;
-    background-color: blue;
+    background-color: red;
 }
 .download{
     position: absolute;
@@ -27,7 +27,7 @@ body{
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 25px;
-    background-color: blue;
+    background-color: green;
 }
 .solved{
     display: none;
