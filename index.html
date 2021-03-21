@@ -11,7 +11,7 @@
 </head>
 <body>
     <button class="takePhoto">Take Photo</button>
-    <a-scene embedded arjs='detectionMode : mono_and_matrix; matrixCodeType:3x3'>
+    <a-scene embedded arjs='trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
         <a-marker type='barcode' value='1'></a-marker>
         <a-marker type='barcode' value='2'></a-marker>
         <a-marker type='barcode' value='3'></a-marker>
@@ -25,8 +25,11 @@
         <a-entity camera></a-entity>
     </a-scene>
     <div class="solved">
-        <a class="restart" href="./index.html">Restart</a>
+        <a class="restart" href="./index.html">Restart Game</a>
     </div>
+    <div class="select">
+		<label for="videoSource">Video source: </label><select id="videoSource"></select>
+	</div>
     <a href="./assets/patterns.js" download class="download">Download Puzzle</a>
     <script type="text/javascript" src="js/game.js"></script>
 </body>
