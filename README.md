@@ -1,1 +1,1 @@
-# ARPuzzle
+# Augmented Puzzle Application for the Subject CS6042: Interactive Workshop
