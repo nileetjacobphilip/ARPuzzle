@@ -1,4 +1,5 @@
 {
+  // Function to take photo
   const image = new Image(),
     // takePhotoButton = document.querySelector('button#takePhoto');
     takePhotoButton = document.querySelector('.takePhoto');
@@ -58,7 +59,7 @@
         console.log('getUserMedia error: ', error);
       });
   }
-
+// Information of connected devices
   const gotDevices = deviceInfos => {
     for (let i = 0; i !== deviceInfos.length; ++i) {
       var deviceInfo = deviceInfos[i];
