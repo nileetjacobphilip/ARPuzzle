@@ -1,7 +1,7 @@
 {
   // Function to take photo
   const image = new Image(),
-    // takePhotoButton = document.querySelector('button#takePhoto');
+  // takePhotoButton = document.querySelector('button#takePhoto');
     takePhotoButton = document.querySelector('.takePhoto');
     videoSelect = document.querySelector('select#videoSource');
 
@@ -19,7 +19,7 @@
     pieces = numCol * numRow - 1,
     positionMarkers = [],
     check = new Array(6);
-
+  //Initialization of media setup
   const init = () => {
     video = document.querySelector('video');
     navigator.mediaDevices.enumerateDevices()
@@ -29,8 +29,6 @@
 
     takePhotoButton.addEventListener(`click`, getPicture);
   }
-
-  // Camera ---------------------------------------------------------------
   
 // Get a video stream from the currently selected camera source.
   const getStream = () => {
