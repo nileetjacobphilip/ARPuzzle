@@ -105,7 +105,9 @@
     const ctx = canvas.getContext('2d');
     const pieceWidth = image.width / numCol;
     const pieceHeight = image.height / numRow;
+    //for creating the puzzle image pieces to be overlayed onto the barcode markers
 
+    //Nested for-loop to store and retrieve the puzzle pieces and drawimage on 2d canvas
     for (let x = 0; x < numCol; ++x) {
       for (let y = 0; y < numRow; ++y) {
         ctx.drawImage(image, x * pieceWidth, y * pieceHeight, pieceWidth, pieceHeight, 0, 0, canvas.width, canvas.height);
@@ -129,7 +131,7 @@
 
     })
   }
-
+//game logic to check the distance and position of the pieces and determine the successful completion
   const checkDistance = () => {
     for (let i = 0; i < markers.length; ++i) {
       positionMarkers[i] = markers[i].object3D;
@@ -171,7 +173,7 @@
 
     }
   }
-
+  //Fisher-Yates Shuffle Algorithm
   const puzzleCheck = check => check === true;
 
   const shuffle = randomArray => {
